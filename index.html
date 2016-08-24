@@ -13,6 +13,8 @@
       <btn-bar type="large" :list="list"></btn-bar>
       <btn text="TEST" :large="large" :quiet="quiet" :cta="cta"></btn>
       <icon-btn :large="large" :quiet="quiet"></icon-btn>
+      <list header="TEST" :list="list"></list>
+      <radio v-for="item in list" :item="item"></radio>
     </div>
     <script src="dist/build.js"></script>
   </body>
