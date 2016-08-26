@@ -1,7 +1,7 @@
 <template>
   <div class="topcoat-button-bar">
     <div class="topcoat-button-bar__item" v-for="item in list">
-      <button :class="['topcoat-button-bar__button' + pretype]">{{ item }}</button>
+      <button :class="['topcoat-button-bar__button' + isLarge]">{{ item }}</button>
     </div>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
   props: {
-    type: {
+    large: {
       type: String,
       default: ''
     },
@@ -19,8 +19,8 @@ export default {
     }
   },
   computed: {
-    pretype: function() {
-      return this.type === 'large' ? '--large' : '' 
+    isLarge: function() {
+      return this.large ? '--large' : '' 
     }
   }
 }

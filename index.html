@@ -10,11 +10,24 @@
   </head>
   <body>
     <div id="app">
-      <btn-bar type="large" :list="list"></btn-bar>
+      <btn-bar :large="large" :list="list"></btn-bar>
       <btn text="TEST" :large="large" :quiet="quiet" :cta="cta"></btn>
       <icon-btn :large="large" :quiet="quiet"></icon-btn>
       <list header="TEST" :list="list"></list>
-      <radio v-for="item in list" :item="item"></radio>
+      <div>
+        <radio v-for="item in list" :item="item"></radio>
+      </div>
+      <div style="margin-top: 20px;">
+        <range></range>
+      </div>
+      <div style="margin-top: 20px;">
+        <search :large="false"></search>
+      </div>
+      <switchbtn check="checked"></switchbtn>
+      <tab-bar :list="list"></tab-bar>
+      <text-input :large="large" placeholder="Please input"></text-input>
+      <text-area :large="large" placeholder="Please input" :size="size"></text-area>
+
     </div>
     <script src="dist/build.js"></script>
   </body>
