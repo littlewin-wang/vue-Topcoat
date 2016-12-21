@@ -20,13 +20,13 @@ export default {
     }
   },
   computed: {
-    isLarge: function() {
-      return this.large ? '--large' : '' 
+    isLarge: function () {
+      return this.large ? '--large' : ''
     },
-    isQuiet: function() {
-      return (!this.cta && this.quiet) ? '--quiet' : '' 
+    isQuiet: function () {
+      return (!this.cta && this.quiet) ? '--quiet' : ''
     },
-    isCta: function() {
+    isCta: function () {
       return this.cta ? '--cta' : ''
     }
   }

@@ -1,6 +1,8 @@
 <template>
-  <input type="text" :class="['topcoat-text-input' + isLarge]" :placeholder="placeholder" value="">
+  <textarea :class="['topcoat-text-input' + isLarge]" :placeholder="placeholder" :rows="size.rows" :cols="size.cols" value="">
+  </textarea>
 </template>
+
 
 <script>
 export default {
@@ -11,6 +13,12 @@ export default {
     placeholder: {
       type: String,
       default: 'Text'
+    },
+    size: {
+      type: Object,
+      default: function () {
+        return { rows: 4, cols: 20 }
+      }
     }
   },
   computed: {

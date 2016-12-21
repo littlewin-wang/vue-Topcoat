@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>vue-topcoat</title>
-    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-
-    <link rel="stylesheet" href="topcoat-mobile-light.css">
-  </head>
-  <body>
-    <div id="app">
-      <btn-bar :large="large" :list="list"></btn-bar>
-      <btn text="TEST" :large="large" :quiet="quiet" :cta="cta"></btn>
-      <icon-btn :large="large" :quiet="quiet"></icon-btn>
-      <list header="TEST" :list="list"></list>
-      <div>
-        <radio v-for="item in list" :item="item"></radio>
-      </div>
-      <div style="margin-top: 20px;">
-        <range></range>
-      </div>
-      <div style="margin-top: 20px;">
-        <search :large="false"></search>
-      </div>
-      <switchbtn check="checked"></switchbtn>
-      <tab-bar :list="list"></tab-bar>
-      <text-input :large="large" placeholder="Please input"></text-input>
-      <text-area :large="large" placeholder="Please input" :size="size"></text-area>
-
-    </div>
-    <script src="dist/build.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>vue-Topcoat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="static/css/topcoat-mobile-light.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
 </html>

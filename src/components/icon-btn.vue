@@ -15,11 +15,11 @@ export default {
     }
   },
   computed: {
-    isLarge: function() {
-      return this.large ? '--large' : '' 
+    isLarge: function () {
+      return this.large ? '--large' : ''
     },
-    isQuiet: function() {
-      return this.quiet ? '--quiet' : '' 
+    isQuiet: function () {
+      return this.quiet ? '--quiet' : ''
     }
   }
 }

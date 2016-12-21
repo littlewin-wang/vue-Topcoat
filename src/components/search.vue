@@ -14,8 +14,8 @@ export default {
     }
   },
   computed: {
-    isLarge: function() {
-      return this.large ? '--large' : '' 
+    isLarge: function () {
+      return this.large ? '--large' : ''
     }
   }
 }

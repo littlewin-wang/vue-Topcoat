@@ -13,8 +13,8 @@ export default {
     }
   },
   computed: {
-    isCheck: function() {
-      return this.check === 'checked' ? 'checked' : '' 
+    isCheck: function () {
+      return this.check === 'checked' ? 'checked' : ''
     }
   }
 }
