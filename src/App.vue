@@ -1,5 +1,5 @@
 <template>
-  <Radio :disabled="disabled" :text="text"></Radio>
+  <TextZone></TextZone>
 </template>
 
 <script type="text/ecmascript-6">
@@ -19,11 +19,6 @@
   export default {
     data () {
       return {
-        disabled: true,
-        text: {
-          left: false,
-          content: '一球成名'
-        }
       }
     },
     components: {

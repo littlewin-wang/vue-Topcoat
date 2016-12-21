@@ -1,12 +1,15 @@
 <template>
-  <textarea :class="['topcoat-text-input' + isLarge]" :placeholder="placeholder" :rows="size.rows" :cols="size.cols" value="">
+  <textarea :class="['topcoat-text-input' + isLarge]" :placeholder="placeholder" :rows="size.rows" :cols="size.cols" value="" :disabled="disabled">
   </textarea>
 </template>
 
-
-<script>
+<script type="text/ecmascript-6">
   export default {
     props: {
+      disabled: {
+        type: Boolean,
+        default: false
+      },
       large: {
         type: Boolean
       },

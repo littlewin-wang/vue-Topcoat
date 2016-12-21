@@ -1,20 +1,20 @@
 <template>
   <label class="topcoat-switch">
-    <input type="checkbox" class="topcoat-switch__input" :checked="isCheck">
+    <input type="checkbox" class="topcoat-switch__input" :checked="checked" :disabled="disabled">
     <div class="topcoat-switch__toggle"></div>
   </label>
 </template>
-<script>
+
+<script type="text/ecmascript-6">
   export default {
     props: {
-      check: {
-        type: String,
-        default: ''
-      }
-    },
-    computed: {
-      isCheck: function () {
-        return this.check === 'checked' ? 'checked' : ''
+      disabled: {
+        type: Boolean,
+        default: false
+      },
+      checked: {
+        type: Boolean,
+        default: false
       }
     }
   }

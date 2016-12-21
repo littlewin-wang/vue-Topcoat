@@ -1,12 +1,17 @@
 <template>
-  <input type="search" value="" :placeholder="placeholder" :class="['topcoat-search-input' + isLarge]">
+  <input type="search" value="" :placeholder="placeholder" :class="['topcoat-search-input' + isLarge]" :disabled="disabled">
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   export default {
     props: {
+      disabled: {
+        type: Boolean,
+        default: true
+      },
       large: {
-        type: Boolean
+        type: Boolean,
+        default: true
       },
       placeholder: {
         type: String,
