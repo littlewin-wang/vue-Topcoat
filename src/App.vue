@@ -1,5 +1,5 @@
 <template>
-  <CheckBox :disabled="disabled" :text="text"></CheckBox>
+  <IconBtn :disabled="disabled" :large="large" :quiet="quiet"></IconBtn>
 </template>
 
 <script type="text/ecmascript-6">
@@ -19,8 +19,9 @@
   export default {
     data () {
       return {
-        disabled: false,
-        text: 'TEST'
+        disabled: true,
+        large: false,
+        quiet: false
       }
     },
     components: {

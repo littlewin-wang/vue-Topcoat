@@ -15,7 +15,7 @@
       },
       text: {
         type: String,
-        default: 'Default'
+        default: 'CheckBox'
       }
     }
   }

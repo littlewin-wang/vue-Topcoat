@@ -2,17 +2,20 @@
   <button :class="['topcoat-button' + isLarge + isQuiet + isCta]">{{ text }}</button>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   export default {
     props: {
       large: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       quiet: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       cta: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       text: {
         type: String,

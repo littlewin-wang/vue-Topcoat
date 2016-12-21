@@ -1,17 +1,23 @@
 <template>
-  <button :class="['topcoat-button' + isLarge + isQuiet]">
+  <button :class="['topcoat-button' + isLarge + isQuiet]" :disabled="disabled">
     <span :class="['topcoat-icon' + isLarge]" style="background-color:#A5A7A7;"></span>
   </button>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   export default {
     props: {
+      disabled: {
+        type: Boolean,
+        default: false
+      },
       large: {
-        type: Boolean
+        type: Boolean,
+        default: false
       },
       quiet: {
-        type: Boolean
+        type: Boolean,
+        default: false
       }
     },
     computed: {
