@@ -1,17 +1,27 @@
 <template>
   <label class="topcoat-radio-button">
-    <input type="radio" name="topcoat">
+    {{ text.left ? text.content : '' }}
+    <input type="radio" name="topcoat" :disabled="disabled">
     <div class="topcoat-radio-button__checkmark"></div>
-    {{ item }}
+    {{ !text.left ? text.content : '' }}
   </label>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   export default {
     props: {
-      item: {
-        type: String,
-        default: 'radio'
+      disabled: {
+        type: Boolean,
+        default: false
+      },
+      text: {
+        type: Object,
+        default () {
+          return {
+            left: false,
+            content: 'Label'
+          }
+        }
       }
     }
   }

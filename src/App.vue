@@ -1,5 +1,5 @@
 <template>
-  <IconBtn :disabled="disabled" :large="large" :quiet="quiet"></IconBtn>
+  <Radio :disabled="disabled" :text="text"></Radio>
 </template>
 
 <script type="text/ecmascript-6">
@@ -20,8 +20,10 @@
     data () {
       return {
         disabled: true,
-        large: false,
-        quiet: false
+        text: {
+          left: false,
+          content: '一球成名'
+        }
       }
     },
     components: {
