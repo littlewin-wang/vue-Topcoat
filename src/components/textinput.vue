@@ -1,5 +1,5 @@
 <template>
-  <input type="search" value="" :placeholder="placeholder" :class="['topcoat-search-input' + isLarge]">
+  <input type="text" :class="['topcoat-text-input' + isLarge]" :placeholder="placeholder" value="">
 </template>
 
 <script>
@@ -10,7 +10,7 @@
       },
       placeholder: {
         type: String,
-        default: 'Search'
+        default: 'Text'
       }
     },
     computed: {

@@ -10,16 +10,16 @@
 </template>
 
 <script>
-export default {
-  props: {
-    header: {
-      type: String,
-      default: 'Category'
-    },
-    list: {
-      type: Array,
-      default: ['One', 'Two', 'Three']
+  export default {
+    props: {
+      header: {
+        type: String,
+        default: 'Category'
+      },
+      list: {
+        type: Array,
+        default: ['One', 'Two', 'Three']
+      }
     }
   }
-}
 </script>

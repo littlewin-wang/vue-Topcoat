@@ -5,26 +5,26 @@
 
 
 <script>
-export default {
-  props: {
-    large: {
-      type: Boolean
+  export default {
+    props: {
+      large: {
+        type: Boolean
+      },
+      placeholder: {
+        type: String,
+        default: 'Text'
+      },
+      size: {
+        type: Object,
+        default: function () {
+          return { rows: 4, cols: 20 }
+        }
+      }
     },
-    placeholder: {
-      type: String,
-      default: 'Text'
-    },
-    size: {
-      type: Object,
-      default: function () {
-        return { rows: 4, cols: 20 }
+    computed: {
+      isLarge: function () {
+        return this.large ? '--large' : ''
       }
     }
-  },
-  computed: {
-    isLarge: function () {
-      return this.large ? '--large' : ''
-    }
   }
-}
 </script>

@@ -7,12 +7,12 @@
 </template>
 
 <script>
-export default {
-  props: {
-    item: {
-      type: String,
-      default: 'radio'
+  export default {
+    props: {
+      item: {
+        type: String,
+        default: 'radio'
+      }
     }
   }
-}
 </script>

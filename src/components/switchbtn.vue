@@ -5,17 +5,17 @@
   </label>
 </template>
 <script>
-export default {
-  props: {
-    check: {
-      type: String,
-      default: ''
-    }
-  },
-  computed: {
-    isCheck: function () {
-      return this.check === 'checked' ? 'checked' : ''
+  export default {
+    props: {
+      check: {
+        type: String,
+        default: ''
+      }
+    },
+    computed: {
+      isCheck: function () {
+        return this.check === 'checked' ? 'checked' : ''
+      }
     }
   }
-}
 </script>

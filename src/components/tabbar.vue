@@ -10,12 +10,12 @@
 </template>
 
 <script>
-export default {
-  props: {
-    list: {
-      type: Array,
-      default: ['One', 'Two', 'Three']
+  export default {
+    props: {
+      list: {
+        type: Array,
+        default: ['One', 'Two', 'Three']
+      }
     }
   }
-}
 </script>
